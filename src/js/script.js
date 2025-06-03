@@ -27,7 +27,13 @@ document.querySelectorAll('.theme-btn').forEach(btn => {
     btn.classList.add('active');
   });
 });
-
+document.querySelectorAll('.theme-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.body.setAttribute('data-theme', btn.dataset.theme);
+    document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
 // SLIDESHOW
 let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');

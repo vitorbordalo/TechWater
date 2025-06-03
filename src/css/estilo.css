@@ -39,7 +39,28 @@ body {
   min-height: 100vh;
   transition: background 0.3s, color 0.3s;
 }
+.theme-switcher {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-left: none;
+}
 
+.theme-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.theme-btn:hover,
+.theme-btn.active {
+  background: rgba(255, 255, 255, 0.2);
+}
 /* HEADER E HAMBURGER */
 .header {
   position: fixed;
