@@ -1,12 +1,22 @@
 // HAMBURGER MENU
 const btnHamburger = document.getElementById('hamburger');
-const navMenu     = document.getElementById('header-menu');
+const navMenu      = document.getElementById('header-menu');
 
 btnHamburger.addEventListener('click', () => {
   // anima o ícone
   btnHamburger.classList.toggle('active');
   // revela/esconde o menu
   navMenu.classList.toggle('active');
+});
+
+// FECHAR MENU APÓS CLIQUE EM ITEM (MOBILE)
+document.querySelectorAll('.header-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (navMenu.classList.contains('active')) {
+      navMenu.classList.remove('active');
+      btnHamburger.classList.remove('active');
+    }
+  });
 });
 
 // THEME SWITCHER
