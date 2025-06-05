@@ -3,146 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Water – Solução Contra Enchentes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./src/css/estilo.css" />
   <script src="./src/js/script.js" defer></script>
-  <title>Tech Water – Solução Contra Enchentes</title>
 </head>
 <body data-theme="light">
 
-  <!-- HEADER COM HAMBURGER -->
+  <!-- HEADER -->
   <header class="header">
     <h1 id="titulo">Tech Water</h1>
- 
-    <!-- BOTÕES DE TEMA -->
-  <div class="theme-switcher">
-  <button class="theme-btn" data-theme="light" title="Tema Claro">☀️</button>
-  <button class="theme-btn" data-theme="dark" title="Tema Escuro">🌙</button>
-  <button class="theme-btn" data-theme="blue" title="Tema Azul">🔵</button>
-  </div>
 
- 
-    <!-- Botão Hambúrguer -->
-    <div class="hamburger" id="hamburger">
+    <div class="theme-switcher">
+      <button class="theme-btn" data-theme="light" title="Tema Claro" aria-label="Tema Claro">☀️</button>
+      <button class="theme-btn" data-theme="dark" title="Tema Escuro" aria-label="Tema Escuro">🌙</button>
+      <button class="theme-btn" data-theme="blue" title="Tema Azul" aria-label="Tema Azul">🔵</button>
+    </div>
+
+    <div class="hamburger" id="hamburger" aria-label="Menu">
       <span class="barra"></span>
       <span class="barra"></span>
       <span class="barra"></span>
     </div>
 
-    <!-- Menu Lateral / Mobile -->
     <nav class="header-menu" id="header-menu">
       <ul>
-        <li><a href="#home"    class="active">Home</a></li>
-        <li><a href="#historia">Nossa Jornada</a></li>
-        <li><a href="#problema">Problema</a></li>
-        <li><a href="#tecnologias">Tecnologias</a></li>
-        <li><a href="#objetivos">Objetivos</a></li>
-        <li><a href="#plano">Plano de Ação</a></li>
-        <li><a href="#publico">Público</a></li>
-        <li><a href="#beneficios">Benefícios</a></li>
-        <li><a href="#cotidiano">Dia a Dia</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#home"    class="menu-link active">Home</a></li>
+        <li><a href="#historia" class="menu-link">Nossa Jornada</a></li>
+        <li><a href="#problema" class="menu-link">Problema</a></li>
+        <li><a href="#tecnologias" class="menu-link">Tecnologias</a></li>
+        <li><a href="#objetivos" class="menu-link">Objetivos</a></li>
+        <li><a href="#plano" class="menu-link">Plano de Ação</a></li>
+        <li><a href="#publico" class="menu-link">Público</a></li>
+        <li><a href="#beneficios" class="menu-link">Benefícios</a></li>
+        <li><a href="#cotidiano" class="menu-link">Dia a Dia</a></li>
+        <li><a href="#contato" class="menu-link">Contato</a></li>
+        <li><a href="#quiz" class="menu-link">Quiz</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- CONTEÚDO PRINCIPAL -->
+  <!-- MAIN -->
   <main>
     <div class="content">
 
-      <!-- SLIDESHOW HERO -->
       <section id="home" class="hero">
         <div class="slideshow">
-          <button class="slide-btn prev">‹</button>
+          <button class="slide-btn prev" aria-label="Anterior">‹</button>
           <div class="slides">
-            <img src="./src/assets/chris-gallagher-0PHUAtg_2CQ-unsplash.jpg" class="slide active" alt="Enchente na rua principal">
-            <img src="./src/assets/mika-baumeister-FM_sqOBM5Lw-unsplash.jpg" class="slide" alt="Sensores de monitoramento">
-            <img src="./src/assets/misbahul-aulia-38CTbydRZXI-unsplash.jpg" class="slide" alt="Equipes em ação">
+            <img src="./src/assets/chris-gallagher-0PHUAtg_2CQ-unsplash.jpg" class="slide active" alt="Rua alagada com carros submersos" />
+            <img src="./src/assets/mika-baumeister-FM_sqOBM5Lw-unsplash.jpg"    class="slide" alt="Sensor de água em córrego urbano" />
+            <img src="./src/assets/misbahul-aulia-38CTbydRZXI-unsplash.jpg" class="slide" alt="Equipe de resgate em ação na enchente" />
           </div>
-          <button class="slide-btn next">›</button>
+          <button class="slide-btn next" aria-label="Próximo">›</button>
         </div>
       </section>
 
-      <!-- STORYTELLING: Nossa Jornada -->
-      <section id="historia" class="section">
+      <section id="historia">
         <h2>Nossa Jornada</h2>
-        <p>Tudo começou numa noite de maio, quando uma tempestade histórica varreu a cidade e transformou avenidas em rios urbanos. Foi ali que Vitor e Lucas viram de perto o impacto devastador das enchentes: carros submersos, famílias isoladas e um sentimento de impotência coletiva.</p>
-        <p>Movidos por essa experiência, Vitor e Lucas reuniram engenheiros, designers e especialistas em TI para criar a <strong>Tech Water</strong>, onde tecnologia e empatia se unem para antecipar desastres, informar comunidades e salvar vidas. Cada alerta enviado pela Tech Water carrega o compromisso de nunca mais deixar ninguém à mercê da água.</p>
+        <p>Em 2023, uma tempestade inesperada alagou completamente nossa cidade. Vitor e Lucas, ao presenciarem carros boiando e pessoas isoladas, decidiram agir. Não apenas lamentar, mas desenvolver soluções reais.</p>
+        <p>Junto com especialistas em engenharia, climatologia e TI, nasceu a <strong>Tech Water</strong>, que une inovação e responsabilidade social. Nosso compromisso é garantir que nenhuma comunidade fique sem aviso, sem ação, sem proteção.</p>
       </section>
 
-      <!-- SEÇÃO: Problema -->
       <section id="problema">
         <h2>O Problema</h2>
-        <p>Chuvas fortes alagam ruas em minutos, isolando bairros, danificando casas e impedindo o tráfego de veículos e pedestres.</p>
-        <p>Sem aviso prévio, moradores ficam expostos a riscos, serviços essenciais são interrompidos e perdas financeiras ultrapassam R$ 40 milhões/ano.</p>
+        <p>Chuvas torrenciais causam inundações súbitas, dificultando o socorro, danificando estruturas e colocando vidas em risco. As cidades não estão preparadas para o volume e frequência das chuvas causadas pelas mudanças climáticas.</p>
+        <p>Estimativas indicam mais de R$ 40 milhões em prejuízos anuais em áreas urbanas não monitoradas. Além disso, a falta de comunicação eficaz torna tudo ainda mais perigoso.</p>
       </section>
 
-      <!-- SEÇÃO: Tecnologias -->
       <section id="tecnologias">
         <h2>Tecnologias Utilizadas</h2>
-        <p><strong>Sensores de nível de água</strong> em pontos críticos para medir elevação em tempo real, garantindo precisão e confiabilidade.</p>
-        <p><strong>API de clima</strong> integra previsões de chuva que ajustam os níveis de alerta automaticamente, antecipando riscos.</p>
-        <p><strong>Dashboard web e notificações</strong> enviam SMS e alertas no app para moradores e equipes de resgate, permitindo ação imediata.</p>
+        <p><strong>Sensores IoT:</strong> Instalados em bueiros e córregos, enviam dados em tempo real sobre o nível da água.</p>
+        <p><strong>API Climática:</strong> Integra previsão do tempo para ajustar automaticamente os níveis de alerta e acionar protocolos.</p>
+        <p><strong>Dashboard & Notificações:</strong> Um sistema inteligente envia alertas por SMS, notificações no app e atualiza o painel de controle usado por órgãos públicos.</p>
       </section>
 
-      <!-- SEÇÃO: Objetivos -->
       <section id="objetivos">
         <h2>Objetivos</h2>
         <ul>
-          <li>Avisar com 30 minutos de antecedência sobre risco de enchente.</li>
-          <li>Reduzir em 50% o tempo de resposta de equipes de resgate.</li>
-          <li>Diminuir perdas materiais em até 80% e proteger vidas.</li>
+          <li>Emitir alertas com 30 minutos de antecedência.</li>
+          <li>Diminuir em 50% o tempo de resposta de socorro.</li>
+          <li>Reduzir em até 80% os danos materiais.</li>
+          <li>Evitar mortes e preservar a segurança urbana.</li>
         </ul>
       </section>
 
-      <!-- SEÇÃO: Plano de Ação -->
       <section id="plano">
         <h2>Plano de Ação</h2>
         <ol>
-          <li><strong>Mapear áreas</strong> mais suscetíveis usando dados históricos e topografia.</li>
-          <li><strong>Instalar sensores</strong> em bueiros e margens de córregos para captar níveis de água.</li>
-          <li><strong>Conectar tudo</strong> a um painel unificado que dispara alertas automaticamente.</li>
-          <li><strong>Enviar avisos</strong> por SMS e app a usuários cadastrados e gestores municipais.</li>
-          <li><strong>Treinar equipe</strong> para responder rapidamente aos alertas e realizar ações preventivas.</li>
+          <li>Mapear regiões críticas com dados históricos.</li>
+          <li>Instalar sensores de nível de água conectados por rede sem fio.</li>
+          <li>Integrar sensores com sistema de alerta automático.</li>
+          <li>Enviar alertas imediatos a usuários cadastrados e autoridades locais.</li>
+          <li>Atualizar dados em dashboard para coordenação de ações de emergência.</li>
         </ol>
       </section>
 
-      <!-- SEÇÃO: Público-Alvo -->
       <section id="publico">
         <h2>Público-Alvo</h2>
-        <p><strong>Defesa Civil e prefeituras</strong> para coordenação de bloqueio de ruas e envio de equipes.</p>
-        <p><strong>Moradores e motoristas</strong> em áreas alagáveis, que recebem rotas alternativas e horários seguros para se deslocar.</p>
+        <p><strong>Defesa Civil e prefeituras:</strong> Tomada de decisões e bloqueios estratégicos.</p>
+        <p><strong>Moradores em áreas de risco:</strong> Informação antecipada e segurança para planejamento.</p>
       </section>
 
-      <!-- SEÇÃO: Benefícios -->
       <section id="beneficios">
         <h2>Benefícios</h2>
         <ul>
-          <li>Redução de até 80% dos prejuízos em imóveis.</li>
-          <li>Diminuição de riscos à vida com avisos antecipados.</li>
-          <li>Otimização de recursos em limpeza e manutenção urbana.</li>
+          <li>Proteção de vidas humanas.</li>
+          <li>Economia com manutenção e reparos pós-enchente.</li>
+          <li>Planejamento urbano inteligente.</li>
         </ul>
       </section>
 
-      <!-- SEÇÃO: No Dia a Dia -->
       <section id="cotidiano">
         <h2>No Dia a Dia</h2>
-        <p>Usuários recebem alertas por app e SMS antes de sair de casa, evitando áreas alagadas.</p>
-        <p>Equipes de obras e trânsito ajustam rotas e priorizam limpeza de bueiros conforme dados em tempo real.</p>
+        <p>O aplicativo da Tech Water envia alertas automáticos, orientando os moradores com informações claras sobre rotas seguras e áreas de risco. Ao mesmo tempo, as equipes públicas recebem dados para agir rapidamente e evitar tragédias.</p>
       </section>
 
-      <!-- SEÇÃO: Contato -->
+      <!-- CONTATO (Fale Conosco) Formatado -->
       <section id="contato">
-        <h2>Contato</h2>
+        <h2>Fale Conosco</h2>
+        <p>Tem dúvidas, sugestões ou deseja contribuir com o projeto? Envie sua mensagem abaixo:</p>
         <form id="contactForm">
-          <input type="text" id="nome" placeholder="Nome completo" required />
-          <input type="email" id="email" placeholder="Email válido" required />
-          <textarea id="mensagem" placeholder="Sua dúvida ou sugestão" required></textarea>
-          <button type="submit">Enviar</button>
+          <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-enviar">Enviar</button>
         </form>
       </section>
 
-      <!-- SEÇÃO: Quiz -->
+      <!-- QUIZ -->
       <section id="quiz">
         <h2>Quiz de Conhecimento</h2>
         <div id="quiz-container"></div>
@@ -150,12 +151,11 @@
         <div id="quiz-result"></div>
       </section>
 
-      <footer>
-        <p>&copy; 2025 — Todos os direitos reservados</p>
-      </footer>
-
     </div>
   </main>
 
+  <footer>
+    <p>&copy; 2025 — Todos os direitos reservados</p>
+  </footer>
 </body>
 </html>
